@@ -13,3 +13,12 @@ Text Domain: twentysixteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+.header-menu {
+	list-style-type: none;
+	font-size: 140px;
+}
+#header-menu {
+	list-style-type: none;
+	font-size: 140px;
+}

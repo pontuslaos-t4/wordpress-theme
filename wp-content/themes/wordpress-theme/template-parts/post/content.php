@@ -6,11 +6,11 @@
 	</h2>
 
 	<h3>
-		<?php the_author(); ?>
+		<?php the_author(); ?>, <?php the_time(); ?>
 	</h3>
 
 	<h4>
-		<?php the_date("l, F j, Y"); ?>
+		<?php the_time(); ?>
 	</h4>
 
 	<div>
