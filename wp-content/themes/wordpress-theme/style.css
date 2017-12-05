@@ -22,3 +22,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	list-style-type: none;
 	font-size: 140px;
 }
+
+.content-div {
+	background-color: #EEE;
+	padding: 1vh 1vw;
+}

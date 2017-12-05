@@ -7,6 +7,7 @@
 				<div class="row">
 					<?php get_template_part('template-parts/post/content', get_post_format()); ?>
 				</div>
+				<hr/>
 			<?php endwhile; ?>
 		</div>
 	<?php endif; ?>
