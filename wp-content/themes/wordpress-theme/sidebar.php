@@ -1,15 +1,3 @@
-<div>
-	<ul>
-		<li>
-			Home
-		</li>
-
-		<li>
-			Archive
-		</li>
-
-		<li>
-			Authors
-		</li>
-	</ul>
+<div id="sidebar" class="widgets-area">
+	<?php dynamic_sidebar('sidebar-1'); ?>
 </div>

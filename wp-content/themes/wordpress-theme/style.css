@@ -13,7 +13,7 @@ Text Domain: twentysixteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
+html {overflow-y: scroll;}
 .header-menu {
 	list-style-type: none;
 	font-size: 140px;
@@ -30,6 +30,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .navbar-pl {
 	background-color: lightblue;
+	width: 80vw;
+	margin: 0 auto;
 }
 
 .stylish-input-group {
@@ -63,4 +65,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	.searchbutton {
 		display: none;
 	}
+}
+
+.navbar-container {
+
+}
+
+.post {
+	background-color: #F8F8F8;
 }
