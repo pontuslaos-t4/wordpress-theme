@@ -23,7 +23,7 @@
 	
 	<body <?php body_class(); ?>>
 		<div class="nav-container">
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default navbar-pl">
 				<?php 
 				wp_nav_menu(array(
 					'theme_location' => 'header_nav_menu',
@@ -31,5 +31,9 @@
 					'menu_class' 	 => 'nav navbar-nav'
 				)); 
 				?>
+
+				<div class="searchbar-container">
+					<?php get_search_form(); ?>
+				</div>
 			</nav>
 		</div>

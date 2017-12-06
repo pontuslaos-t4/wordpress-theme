@@ -27,3 +27,40 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	background-color: #EEE;
 	padding: 1vh 1vw;
 }
+
+.navbar-pl {
+	background-color: lightblue;
+}
+
+.stylish-input-group {
+	margin-right: 1vw;
+	margin-top: 1vh;
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.searchbar-container {
+	width: 20vw;
+	float: right;
+}
+
+@media screen and (max-width: 764px) {
+	.searchbar-container {
+		float: none;
+	}
+
+	.searchbutton {
+		display: none;
+	}
+}
