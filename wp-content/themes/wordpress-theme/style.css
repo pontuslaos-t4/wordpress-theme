@@ -74,3 +74,13 @@ html {overflow-y: scroll;}
 .post {
 	background-color: #F8F8F8;
 }
+
+#sidebar {
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.container-pl {
+	margin: 0 auto;
+}
