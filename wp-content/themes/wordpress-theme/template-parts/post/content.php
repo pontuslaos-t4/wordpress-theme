@@ -1,15 +1,23 @@
 <article <?php post_class(); ?> id="<?php the_ID(); ?>">
-	<h7> 
-		<?php the_time(); ?>  <?php echo get_the_date(); ?> 
-	</h7>
-	
-	<h2> 
-		<a href="<?php the_permalink(); ?>"> 
-			<?php the_title(); ?> 
-		</a> 
-	</h2>
-	
-	<div class="content-div"> 
-		<?php the_content(); ?> 
+	<?php if (has_post_thumbnail()) : ?>
+		<div class="row">
+			<?php the_post_thumbnail(); ?>
+		</div>
+	<?php endif; ?>
+
+	<div class="row">
+		<div class="title-div">			
+			<h4> 
+				<a href="<?php the_permalink(); ?>"> 
+					<?php the_title(); ?> 
+				</a> 
+			</h4>
+		</div>
+		
+		<div class="content-div"> 
+			<p>
+				<?php the_excerpt(); ?> <a href="<?php the_permalink(); ?>">Läs mer...</a>
+			</p>
+		</div>
 	</div>
 </article>

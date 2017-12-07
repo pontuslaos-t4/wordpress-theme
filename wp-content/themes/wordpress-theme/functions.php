@@ -1,6 +1,8 @@
 <?php
 
 add_theme_support('html5', array('search-form'));
+add_theme_support('post-thumbnails');
+set_post_thumbnail_size(150, 150);
 
 // Add nav menu to the header
 function register_my_menu() {
