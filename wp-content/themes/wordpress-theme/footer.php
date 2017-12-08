@@ -1,5 +1,8 @@
-		</div> <!-- .container -->
+		</div> <!-- .container .container-pl -->
 		
-		<?php wp_footer(); ?>
+		<div id="footer-pl">
+			<?php wp_footer(); ?>
+			<br />
+		</div>
 	</body>
 </html>

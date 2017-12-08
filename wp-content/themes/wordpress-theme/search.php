@@ -18,7 +18,7 @@
 
 	<div class="col-md-4"></div>
 
-	<div id="sidebar" class="col-md-4">
+	<div id="sidebar" class="col-md-3 pull-right">
 		<?php get_sidebar(); ?>
 	</div>
 </div>

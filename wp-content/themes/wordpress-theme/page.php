@@ -4,7 +4,7 @@
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<div class="page col-md-4 col-md-offset-2">
-				<div class="row">
+				<div class="row righthand-side-pl">
 					<h4>
 						<?php the_title(); ?>
 					</h4>
@@ -21,7 +21,7 @@
 		<?php endwhile; ?>
 	<?php endif; ?>
 
-	<div class="col-md-4 pull-right">
+	<div class="col-md-3 pull-right">
 		<?php get_sidebar(); ?>
 	</div>
 </div>

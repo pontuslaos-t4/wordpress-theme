@@ -34,37 +34,33 @@ This is my header.
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="header-container" style="background-image: url(<?php header_image(); ?>);">
+					<div class="header-container">
 						<div class="header-content">
-
+							<img id="header-image-pl" class="img-responsive center-block" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width ?>" height="<?php echo get_custom_header()->height ?>" />
 						</div>
+					</div>
 
-						<div class="nav-container">
-							<div class="nav-content">
-								<nav class="navbar navbar-default navbar-pl">
-									<div class="navbar-items">
-										<?php 
-										wp_nav_menu(array(
-											'theme_location' => 'header_nav_menu',
-											'container'      => false,
-											'menu_class' 	 => 'nav navbar-nav'
-										)); 
-										?>
-										<div class="searchbar-container">
-											<?php get_search_form(); ?>
-										</div>
+					<div class="nav-container">
+						<div class="nav-content">
+							<nav class="navbar navbar-default navbar-pl">
+								<div class="navbar-items">
+									<?php 
+									wp_nav_menu(array(
+										'theme_location' => 'header_nav_menu',
+										'container'      => false,
+										'menu_class' 	 => 'nav navbar-nav'
+									)); 
+									?>
+									<div class="searchbar-container">
+										<?php get_search_form(); ?>
 									</div>
-								</nav>
-							</div>
+								</div>
+							</nav>
 						</div>
+						<br /><br /><br />
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="container container-pl">
-			<div class="row text-center">
-				<h2>
-					<?php wp_title(); ?>
-				</h2>
-			</div>

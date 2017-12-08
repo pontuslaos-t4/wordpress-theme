@@ -1,8 +1,15 @@
 <?php
 
 add_theme_support('html5', array('search-form'));
+
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(150, 150);
+
+add_theme_support('custom-header', array(
+	'flex-width'    => true,
+	'flex-height'   => true,
+	'default-image' => get_template_directory_uri() . '/assets/images/header.jpg'
+));
 
 // Add nav menu to the header
 function register_my_menu() {
@@ -23,5 +30,10 @@ function my_widget_setup() {
 	));
 }
 add_action('widgets_init', 'my_widget_setup');
+
+function my_excerpt_length() {
+	return 10;
+}
+add_filter('excerpt_length', 'my_excerpt_length');
 
 ?>
